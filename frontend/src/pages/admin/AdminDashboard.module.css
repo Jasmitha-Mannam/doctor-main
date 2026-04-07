@@ -1,0 +1,256 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+.sidebar {
+  width: 220px;
+  background: #1a202c;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.sidebarTop {
+  padding: 28px 20px 18px;
+  border-bottom: 1px solid #2d3748;
+  text-align: center;
+}
+.adminBadge {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fbbf24;
+}
+.adminSub {
+  font-size: 12px;
+  color: #718096;
+  margin-top: 4px;
+}
+.sidebarNav {
+  padding: 12px 0;
+  flex: 1;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 20px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #a0aec0;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+  border-left: 3px solid transparent;
+}
+.navItem:hover {
+  background: #2d3748;
+  color: #fff;
+}
+.navActive {
+  color: #fbbf24 !important;
+  background: rgba(251, 191, 36, 0.08) !important;
+  border-left-color: #fbbf24 !important;
+  font-weight: 500;
+}
+.navIcon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+.logoutBtn {
+  margin: 12px 16px 20px;
+  padding: 10px;
+  background: none;
+  border: 1px solid #4a5568;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: #718096;
+  cursor: pointer;
+}
+.logoutBtn:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+.main {
+  flex: 1;
+  overflow-y: auto;
+}
+.page {
+  padding: 32px 40px;
+  max-width: 1100px;
+}
+.pageTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.statCard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+}
+.statIcon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.statNum {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.statLabel {
+  font-size: 12px;
+  color: var(--text-3);
+}
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.whiteCard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  overflow: hidden;
+}
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.modeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.modeRow:last-child {
+  border-bottom: none;
+}
+.filterRow {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.filterBtn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--text-2);
+  transition: all 0.15s;
+}
+.filterBtn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.filterActive {
+  background: var(--teal-light) !important;
+  border-color: var(--teal) !important;
+  color: var(--teal) !important;
+  font-weight: 500;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.table th {
+  text-align: left;
+  padding: 10px 10px;
+  background: #f9fafb;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+.table td {
+  padding: 11px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+.table tr:hover td {
+  background: #fafbfc;
+}
+.modePill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.mOnline {
+  background: #e0f7fa;
+  color: #00838f;
+}
+.mOffline {
+  background: #eceff1;
+  color: #546e7a;
+}
+.mBoth {
+  background: #e8eaf6;
+  color: #3949ab;
+}
+.statusPill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.stBOOKED {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.stCOMPLETED {
+  background: #eeeeee;
+  color: #424242;
+}
+.stCANCELLED {
+  background: #ffebee;
+  color: #c62828;
+}
+.stNO_SHOW {
+  background: #fff8e1;
+  color: #f57f17;
+}
+.acceptBtn {
+  padding: 5px 10px;
+  background: var(--teal);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.declineBtn {
+  padding: 5px 10px;
+  background: #b0bec5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  cursor: pointer;
+}
